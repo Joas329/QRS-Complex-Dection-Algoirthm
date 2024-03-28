@@ -1,0 +1,25 @@
+lab5_Philco-L05
+Graph Created on: 1970-01-01 00:00:00.000
+Recording on: 2024-02-15 16:31:23.731
+1 msec/sample
+2 channels
+ECG
+mV
+Heart Rate
+BPM
+
+,149120 samples,149120 samples,
+
+
+
+Mahdin_Lab3-L05
+Graph Created on: 1970-01-01 00:00:00.000
+Recording on: 2024-02-08 16:50:24.940
+1 msec/sample
+2 channels
+ECG
+mV
+Heart Rate
+BPM
+
+136765 samples	136765 samples	
