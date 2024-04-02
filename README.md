@@ -7,6 +7,11 @@ Following this, a machine learning algorithm is trained on this mathematical mod
 The signal acquired is a time-domain electrocardiagram with the y-axis being the voltage meassured in the ECG. 
 This signal has been retreieve at a laboratory using an MP36/35 unit, performing an electrocardiogram.
 There are two dataset (one for training, another for testing).
+## Training Signal
+![image](https://github.com/Joas329/QRS-Complex-Dection-Algoirthm/assets/51135069/ce41ef17-02d5-4a8c-96b7-11332ed70d4d)
+
+
+
 
 # Mathematical Model
 The mathematical model follows two functions:
@@ -17,11 +22,19 @@ The mathematical model follows two functions:
 - Transform the signal from time domain to frequency domain.
 - Apply a low pass filter
 - return the signal to the time domain
+  
+### Function Results
+![image](https://github.com/Joas329/QRS-Complex-Dection-Algoirthm/assets/51135069/e170e78f-0574-4dcd-bb34-8e9260482e34)
+
 
 ## QRS Detection
 - Randomly select 4 windows (500 ms [approximate QRS coomplex length]) in the dataset and calcualtes their maximum values from this
 - Finds the mean value from the these and stores it as threshold parameter.
 - Iterates through the data and binary encodes and stores the indexes in which a QRS complex was detected.
+
+### Function Results
+![image](https://github.com/Joas329/QRS-Complex-Dection-Algoirthm/assets/51135069/412292d8-9f39-4b88-a56f-d28e45dc49db)
+
 
 # Training the Machine Learning Model
 Before applying the both the Rate of Change function and the QRS one, we clean the training dataset and create a preprocessing pipeline using sklearn.
@@ -31,7 +44,8 @@ Pass the dataset into the pipeline and train a machine learning model, in this c
 Finally, once we have a trained model, we perform a prediction by using our second subject's dataset.
 
 ## Before Prediction
-![image](https://github.com/Joas329/QRS-Complex-Dection-Algoirthm/assets/51135069/6659c313-9f05-42b2-9ec6-08790598a8d3)
+![image](https://github.com/Joas329/QRS-Complex-Dection-Algoirthm/assets/51135069/b17ba84d-a4eb-4331-830a-69b4d60bd589)
+
 
 
 ## After Prediction
