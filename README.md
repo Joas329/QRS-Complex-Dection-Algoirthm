@@ -36,3 +36,15 @@ Finally, once we have a trained model, we perform a prediction by using our seco
 
 ## After Prediction
 ![image](https://github.com/Joas329/QRS-Complex-Dection-Algoirthm/assets/51135069/4f4d7b38-1db2-4669-b673-10437b7c3649)
+
+# Model Performance Metrics:
+## Training Outputs
+| Support Vector Classifier - Training | mse    | MAE    |  RMSE  |  R2  |
+| :---:   | :---: | :---: | :---: | :---: |
+| Result | 0.000083   | 0.000083   |  0.009129  |  0.998111  |
+				
+## Testing Outputs
+
+| Support Vector Classifier - Testing | mse    | MAE    |  RMSE  |  R2  |
+| :---:   | :---: | :---: | :---: | :---: |
+| Result | 0.000313   | 0.000313   |  0.017678  |  0.992211  |
